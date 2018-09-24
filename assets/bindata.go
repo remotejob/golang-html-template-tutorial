@@ -193,15 +193,15 @@ var _templatesThird_viewHtml = []byte(`<!DOCTYPE html>
             {{.NavigationBar}}
 
             <h1>Rendering Data</h1>
-            <h4>This page takes the number passed in and determines if it is odd or even</h4>
+            <h4>This page takes the integer passed in and determines if it is odd or even</h4>
             <div class="result-box">
                 {{if .StringQuery}}
-                    <h2 class="result-underlined">You didn't enter a number, you did this:</h2>
+                    <h2 class="result-underlined">You didn't enter an integer. This is what was entered:</h2>
                     <h3>{{.StringQuery}}</h3>
                 {{else}}
-                    <h2 class="result-underlined">The number entered is</h2>
+                    <h2 class="result-underlined">The number entered is:</h2>
                     <h3>{{.Number}}</h3>
-                    <h2 class="result-underlined">This number is</h2>
+                    <h2 class="result-underlined">This number is:</h2>
                     <h3>{{.Number | formatOddOrEven}}</h3>
                 {{end}}
             </div>
